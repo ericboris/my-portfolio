@@ -31,7 +31,7 @@ const Header = () => {
 
             <div className="flex">
                 {links.map(({ title, link }) => (
-                    <a 
+                    <a key={title} 
                         className="mx-1 hover:text-sky-600 font-bold"
                         href={link} 
                         target="_blank" 

@@ -10,7 +10,7 @@ const AboutMe = () => (
                 Hello, World!
             </h2>
             <p className="text-l">
-                I'm Eric, a software engineer based in Seattle, WA.
+                I&apos;m Eric, a software engineer based in Seattle, WA.
             </p>
         </div>
     </div>
