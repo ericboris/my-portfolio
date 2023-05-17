@@ -6,13 +6,23 @@ import Education from "../components/Education";
 import Footer from "../components/Footer";
 
 export default function Home() {
+    const project = { 
+        company_title: "Geometry",
+        company_subtitle: "Decentralized Exchange",
+        description: "Reimagined trading on the ethereum blockchain.",
+        image: "/helix.png",
+        link: "https://github.com/ericboris/aura-backend",
+    };
+
     return (
         <main>
         <Header />
 
         <AboutMe />
         <HorizontalLine />
-        <Projects />
+        
+
+        <Projects/>
         <HorizontalLine />
         <Education />
 
