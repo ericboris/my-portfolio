@@ -21,7 +21,6 @@ export default function Home() {
         <HorizontalLine />
         <WorkExperience />
         <HorizontalLine />
-        <Stack />
         <Education />
         <Projects />
 
