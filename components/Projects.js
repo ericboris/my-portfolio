@@ -1,54 +1,40 @@
 import React from 'react';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
-const MyProjects = () => {
+const Projects = () => {
     const projects = [
         {
-            title: "Proj1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "https://preview.redd.it/0y99sk4a4a0b1.jpg?width=960&crop=smart&auto=webp&v=enabled&s=91224f8d1b8c29edc7cf0db54d57c1bb5c8c97a9",
-            tags: "Python, Solidity, SQL, React, Flask",
-            github: "https://github.com/ericboris",
-            demo: "https://github.com/ericboris",
-        },
-        { title: "Proj1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "https://preview.redd.it/0y99sk4a4a0b1.jpg?width=960&crop=smart&auto=webp&v=enabled&s=91224f8d1b8c29edc7cf0db54d57c1bb5c8c97a9",
-            tags: "Python, Solidity, SQL, React, Flask",
-            github: "https://github.com/ericboris",
-            demo: "https://github.com/ericboris",
-        },
-        {
-            title: "Proj1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: "https://preview.redd.it/0y99sk4a4a0b1.jpg?width=960&crop=smart&auto=webp&v=enabled&s=91224f8d1b8c29edc7cf0db54d57c1bb5c8c97a9",
-            tags: "Python, Solidity, SQL, React, Flask",
-            github: "https://github.com/ericboris",
-            demo: "https://github.com/ericboris",
+            company_title: "Geometry",
+            company_subtitle: "Decentralized Exchange",
+            description: "Reimagined trading on the ethereum blockchain.",
+            image: "/helix.png",
+            link: "https://github.com/ericboris/aura-backend",
         },
     ];
 
     return (
-        <div className="bg-raisin-black shadow mt-6 py-10 px-4 text-left">
-            <h2 className="text-4xl font-black underline">myProjects();</h2>
-            <div className="flex-raw md:flex">
-                {projects.map(({ title, description, image, tags, github, demo }) => (
-                    <div key={title} className="bg-happy-black my-2 md:mx-2 p-2">
-                        <div className="flex flex-col">
-                            <h3 className="text-2xl">{title}</h3>
-                            <img className="project-image" src={image} alt={title} />
-                            <p className="text-xl">{description}</p>
-                            <p className="font-black text-pink">{tags}</p>
-
-                            <div className="font-black flex mt-4">
-                                <a href={github} target="_blank" rel="noopener noreferrer" className="mr-4">Github</a>
-                                <a href={demo} target="_blank" rel="noopener noreferrer">Live demo</a>
-                            </div>
-                        </div>
+        <div className="my-10 mx-4">
+            {projects.map(({ company_title, company_subtitle, description, image }) => (
+                <div key={company_title} className="flex flex-col items-center my-6">
+                    <div className="flex text-left items-center gap-2">
+                        <p className="text-xl font-bold">{company_title}</p>
+                        <p className="text-sm">{company_subtitle}</p>
                     </div>
-                ))}
-            </div>
+                    <p className="text-sm font-light">{description}</p>
+                    <a  
+                        href="https://github.com/ericboris/aura-backend"
+                        className="flex items-center text-sm font-semibold hover:text-sky-600"
+                    >
+                        View Project
+                        <ArrowRightIcon className="w-4 h-4 text-orange-500" />
+                    </a>
+                    <div className="m-4">
+                        <img src={image} />
+                    </div>
+                </div>
+            ))}
         </div>
     );
 };
 
-export default MyProjects;
+export default Projects;

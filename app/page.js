@@ -5,7 +5,6 @@ import Projects from "../components/Projects";
 import Stack from "../components/Stack";
 import Tools from "../components/Tools";
 import Footer from "../components/Footer";
-import WorkExperience from "../components/WorkExperience";
 import Education from "../components/Education";
 import Blog from "../components/Blog";
 import Skills from "../components/Skills";
@@ -19,10 +18,9 @@ export default function Home() {
 
         <AboutMe />
         <HorizontalLine />
-        <WorkExperience />
+        <Projects />
         <HorizontalLine />
         <Education />
-        <Projects />
 
         <Footer />
         </main>
