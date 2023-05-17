@@ -10,22 +10,26 @@ import Education from "../components/Education";
 import Blog from "../components/Blog";
 import Skills from "../components/Skills";
 import References from "../components/References";
+import HorizontalLine from "../components/HorizontalLine";
 
 export default function Home() {
-  return (
-    <main>
-      <Header />
-      <AboutMe />
-      <Contact />
-      <Stack />
-      <Tools />
-      <Projects />
-      <WorkExperience />
-      <Education />
-      <Blog />
-      <Skills />
-      <References />
-      <Footer />
-    </main>
-  )
+    return (
+        <main>
+        <Header />
+
+        <AboutMe />
+        <HorizontalLine />
+        <WorkExperience />
+        <HorizontalLine />
+        <Stack />
+        <Tools />
+        <Projects />
+        <Education />
+        <Blog />
+        <Skills />
+        <References />
+
+        <Footer />
+        </main>
+    )
 }
