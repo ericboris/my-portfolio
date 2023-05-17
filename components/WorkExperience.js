@@ -1,24 +1,36 @@
 import React from 'react';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 const WorkExperience = () => {
     const experiences = [
         {
-            title: "Software Engineer",
-            company: "ABC Corporation",
-            duration: "Jan 2020 - Present",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            company_title: "Geometry",
+            company_subtitle: "Decentralized Exchange",
+            description: "Reimagined trading on the ethereum blockchain.",
+            image: "/helix.png",
+            link: "https://github.com/ericboris/aura-backend",
         },
     ];
 
     return (
-        <div className="bg-raisin-black shadow py-10 px-4 text-left">
-            <h2 className="text-4xl font-black underline">WorkExperience();</h2>
-            {experiences.map(({ title, company, duration, description }) => (
-                <div key={title} className="experience">
-                    <h3 className="role">{title}</h3>
-                    <p className="company">{company}</p>
-                    <p className="duration">{duration}</p>
-                    <p className="description">{description}</p>
+        <div className="my-10 mx-4">
+            {experiences.map(({ company_title, company_subtitle, description, image }) => (
+                <div key={company_title} className="flex flex-col items-center my-6">
+                    <div className="flex text-left items-center gap-2">
+                        <p className="text-xl font-bold">{company_title}</p>
+                        <p className="text-sm">{company_subtitle}</p>
+                    </div>
+                    <p className="text-sm font-light">{description}</p>
+                    <a  
+                        href="https://github.com/ericboris/aura-backend"
+                        className="flex items-center text-sm font-semibold hover:text-sky-600"
+                    >
+                        View Project
+                        <ArrowRightIcon className="w-4 h-4 text-orange-500" />
+                    </a>
+                    <div className="m-4">
+                        <img src={image} />
+                    </div>
                 </div>
             ))}
         </div>
