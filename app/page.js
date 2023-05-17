@@ -22,12 +22,8 @@ export default function Home() {
         <WorkExperience />
         <HorizontalLine />
         <Stack />
-        <Tools />
-        <Projects />
         <Education />
-        <Blog />
-        <Skills />
-        <References />
+        <Projects />
 
         <Footer />
         </main>
