@@ -7,7 +7,7 @@ const Education = ({ education }) => {
     const gpa = education.gpa;
 
     return (
-        <div key={degree} className="border">
+        <div className="mb-10 border">
             <h3>{degree}</h3>
             <p>{university}</p>
             <p>{duration}</p>
