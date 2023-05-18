@@ -15,8 +15,8 @@ const Projects = () => {
 
     return (
         <div className="mx-4 border">
-            {projects.map((project) => (
-                <Project project={project} />
+            {projects.map((project, index) => (
+                <Project key={index} project={project} />
             ))}
         </div>
     );
