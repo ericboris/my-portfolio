@@ -4,6 +4,14 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 const Header = () => {
     const links = [
         {
+            title: 'Projects',
+            link: 'https://www.linkedin.com/in/eric-boris/',
+        },
+        {
+            title: 'Education',
+            link: 'https://www.linkedin.com/in/eric-boris/',
+        },
+        {
             title: 'Github',
             link: 'https://github.com/ericboris',
         },
