@@ -14,7 +14,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className="my-10 mx-4">
+        <div className="mx-4 border">
             {projects.map((project) => (
                 <Project project={project} />
             ))}

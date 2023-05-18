@@ -17,11 +17,11 @@ const Header = () => {
     ];
 
     return (
-        <div className="sticky flex h-10 items-center bg-white top-0 justify-between w-full text-decoration-none">
+        <div className="sticky flex items-center bg-white top-0 justify-between mx-4 border">
             <h1>
                 <a
                     href="http://localhost:3000/" 
-                    className="text-2xl mx-1 hover:text-sky-600 font-black" 
+                    className="text-2xl hover:text-sky-600 font-bold border" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
@@ -29,10 +29,10 @@ const Header = () => {
                 </a>
             </h1>
 
-            <div className="flex">
+            <div className="flex gap-2 border">
                 {links.map(({ title, link }) => (
                     <a key={title} 
-                        className="mx-1 hover:text-sky-600 font-bold"
+                        className="hover:text-sky-600 font-bold text-sm border"
                         href={link} 
                         target="_blank" 
                         rel="noopener noreferrer"

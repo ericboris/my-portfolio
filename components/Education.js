@@ -12,17 +12,19 @@ const Education = () => {
     ];
 
     return (
-        <div className="bg-pink text-raisin-black shadow mt-6 py-10 px-4 text-left">
-            <h2 className="text-4xl font-black underline">Education();</h2>
-            {educations.map(({ degree, university, duration, description, gpa }) => (
-                <div key={degree} className="educationDetail">
-                    <h3 className="degree">{degree}</h3>
-                    <p className="university">{university}</p>
-                    <p className="duration">{duration}</p>
-                    <p className="description">{description}</p>
-                    <p className="gpa">{gpa}</p>
-                </div>
-            ))}
+        <div className="mx-4 border">
+            <div className="my-10">
+                <h2 className="text-4xl font-black underline border">Education();</h2>
+                {educations.map(({ degree, university, duration, description, gpa }) => (
+                    <div key={degree} className="border">
+                        <h3>{degree}</h3>
+                        <p>{university}</p>
+                        <p>{duration}</p>
+                        <p>{description}</p>
+                        <p>{gpa}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
