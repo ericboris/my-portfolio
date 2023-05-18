@@ -24,7 +24,7 @@ const Header = () => {
     };
 
     return (
-        <nav className="bg-white">
+        <nav className="bg-white relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
@@ -70,7 +70,7 @@ const Header = () => {
             </div>
 
             {isMenuOpen && (
-                <div className="md:hidden">
+                <div className="md:hidden absolute top-16 left-0 w-full z-50 bg-white">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {links.map(({ title, link }) => (
                             <a
