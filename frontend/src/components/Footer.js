@@ -17,12 +17,11 @@ const Footer = () => {
     ];
 
     return (
-        <div className="flex justify-center font-extralight text-xs gap-4">
+        <div className="sticky flex justify-center font-extralight text-xs gap-4">
             {links.map(({ title, link }) => (
                 <a 
                     key={title}
                     href={link}
-                    className="border"
                 >
                     {title} 
                 </a>

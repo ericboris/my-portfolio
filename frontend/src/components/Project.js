@@ -9,7 +9,7 @@ const Project = ({ project }) => {
     const link = project.link;
 
     return (
-        <div className="my-10">
+        <div className="my-4">
             <div className="mx-4 sm:mx-auto">
                 <a href={link}>
                     <div key={company_title} className="flex flex-col items-center">

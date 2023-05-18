@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => (
     <div className="mx-4 place-content-center">
-        <div className="flex my-10 gap-4">
+        <div className="flex my-4 gap-4">
             <div className="max-w-[50%]">
                 <img src="/image01.png" alt="Profile" />
             </div>
