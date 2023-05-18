@@ -4,7 +4,6 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Educations from "./components/Educations";
 import Footer from "./components/Footer";
-import Test from "./components/Test";
 
 function App() {
     const project = { 
@@ -18,7 +17,6 @@ function App() {
     return (
         <main>
             <Header />
-            <Test />
 
             <AboutMe />
 
