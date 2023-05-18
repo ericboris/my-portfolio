@@ -31,7 +31,7 @@ const Header = () => {
                         <div className="flex-shrink-0">
                             <a
                                 href="http://localhost:3000/"
-                                className="text-2xl hover:text-sky-600 font-bold border"
+                                className="text-2xl hover:text-sky-600 font-bold"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

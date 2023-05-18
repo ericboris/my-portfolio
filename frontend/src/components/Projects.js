@@ -23,7 +23,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className="border">
+        <div>
             <Carousel showThumbs={false} showStatus={false} infiniteLoop={true}>
                 {projects.map((project, index) => (
                     <Project key={index} project={project} />

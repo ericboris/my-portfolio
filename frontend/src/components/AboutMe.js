@@ -1,12 +1,12 @@
 import React from 'react';
 
 const AboutMe = () => (
-    <div className="mx-4 border place-content-center">
-        <div className="flex my-10 gap-4 border">
-            <div className="max-w-[50%] border">
+    <div className="mx-4 place-content-center">
+        <div className="flex my-10 gap-4">
+            <div className="max-w-[50%]">
                 <img src="/image01.png" alt="Profile" />
             </div>
-            <div className="font-black border">
+            <div className="font-black">
                 <h2 className="text-5xl text-orange-500">
                     Hello, World!
                 </h2>

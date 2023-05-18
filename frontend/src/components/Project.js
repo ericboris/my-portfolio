@@ -10,9 +10,9 @@ const Project = ({ project }) => {
 
     return (
         <div className="my-10">
-            <div className="mx-4 sm:mx-auto border">
+            <div className="mx-4 sm:mx-auto">
                 <a href={link}>
-                    <div key={company_title} className="flex flex-col items-center border">
+                    <div key={company_title} className="flex flex-col items-center">
                         <div className="flex text-left items-center gap-4">
                             <p className="text-xl font-bold">{company_title}</p>
                             <p className="text-sm">{company_subtitle}</p>
