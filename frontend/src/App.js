@@ -6,14 +6,6 @@ import Educations from "./components/Educations";
 import Footer from "./components/Footer";
 
 function App() {
-    const project = { 
-        company_title: "Geometry",
-        company_subtitle: "Decentralized Exchange",
-        description: "Reimagined trading on the ethereum blockchain.",
-        image: "/helix.png",
-        link: "https://github.com/ericboris/aura-backend",
-    };
-
     return (
         <main>
             <Header />
