@@ -18,9 +18,9 @@ const Footer = () => {
 
     return (
         <div className="sticky flex justify-center font-extralight text-xs md:text-sm lg:text-base gap-4 md:gap-8">
-            {links.map(({ title, link }) => (
+            {links.map(({ title, link }, index) => (
                 <a
-                    key={title}
+                    key={`${index}-${title}`}
                     href={link}
                 >
                     {title}

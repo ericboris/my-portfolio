@@ -18,7 +18,7 @@ const Project = ({ project }) => {
                             <p className="text-sm sm:text-lg md:text-2xl">{company_subtitle}</p>
                         </div>
                         <div className="my-2">
-                            <img src={image} className="max-w-full h-auto"/>
+                            <img src={image} className="max-w-full h-auto" alt={company_title} />
                         </div>
                     </div>
                 </a>
