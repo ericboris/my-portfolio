@@ -17,15 +17,15 @@ const Footer = () => {
     ];
 
     return (
-        <div className="sticky flex justify-center font-extralight text-xs gap-4">
+        <div className="sticky flex justify-center font-extralight text-xs md:text-sm lg:text-base gap-4 md:gap-8">
             {links.map(({ title, link }) => (
-                <a 
+                <a
                     key={title}
                     href={link}
                 >
-                    {title} 
+                    {title}
                 </a>
-            ))} 
+            ))}
         </div>
     );
 };

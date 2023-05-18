@@ -6,15 +6,15 @@ import Footer from "./components/Footer";
 
 function App() {
     return (
-        <main className="min-h-screen flex flex-col">
+        <main className="container mx-auto px-4 min-h-screen flex flex-col">
             <Header />
 
-            <div className="flex-grow">
+            <div className="flex-grow md:px-16 lg:px-32 xl:px-64">
                 <AboutMe />
                 <HorizontalLine />
                 <Projects/>
             </div>
-            
+
             <Footer />
         </main>
     )

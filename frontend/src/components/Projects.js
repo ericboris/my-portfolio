@@ -23,13 +23,11 @@ const Projects = () => {
     ];
 
     return (
-        <div>
-            <Carousel showThumbs={false} showStatus={false} infiniteLoop={true}>
-                {projects.map((project, index) => (
-                    <Project key={index} project={project} />
-                ))}
-            </Carousel>
-        </div>
+        <Carousel showThumbs={false} showStatus={false} infiniteLoop={true}>
+            {projects.map((project, index) => (
+                <Project key={index} project={project} />
+            ))}
+        </Carousel>
     );
 };
 
