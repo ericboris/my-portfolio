@@ -24,11 +24,9 @@ const Projects = () => {
 
     return (
         <div className="border">
-            <Carousel showThumbs={false} showStatus={false}>
+            <Carousel showThumbs={false} showStatus={false} infiniteLoop={true}>
                 {projects.map((project, index) => (
-                    <div key={index}>
-                        <Project project={project} />
-                    </div>
+                    <Project key={index} project={project} />
                 ))}
             </Carousel>
         </div>
