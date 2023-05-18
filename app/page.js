@@ -16,15 +16,15 @@ export default function Home() {
 
     return (
         <main>
-        <Header />
+            <Header />
 
-        <AboutMe />
+            <AboutMe />
 
-        <HorizontalLine />
+            <HorizontalLine />
 
-        <Projects/>
+            <Projects/>
 
-        <Footer />
+            <Footer />
         </main>
     )
 }
